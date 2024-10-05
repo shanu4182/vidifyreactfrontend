@@ -1,0 +1,15 @@
+
+
+.user-content {
+  padding: 20px;
+}
+
+.content-list {
+  margin-top: 20px;
+}
+
+.shorts-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}

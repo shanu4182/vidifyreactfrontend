@@ -1,0 +1,66 @@
+.MovieDetailsPage {
+  height: 100%;
+  background-color: black; /* Optional: set a background color */
+}
+
+.MovieDetailsPage .MovieDetails {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.MovieDetailsPage .MovieDetails .MovieDetailsVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.MovieDetailsPage .MovieDetails .MovieDetailsInfo {
+  z-index: 1;
+  position: absolute;
+  bottom: 20px; /* Moves the info section to the bottom of the screen */
+  left: 20px; /* Keeps it aligned to the left */
+  color: white; 
+  padding: 20px; /* Adds padding inside the info box */
+  border-radius: 8px; /* Rounds the corners of the info box */
+  max-width: 50%; /* Ensures the info section doesn’t take up too much space */
+}
+.MovieDetailsPage .MovieDetails .vignette {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle, transparent 60%, rgb(0, 0, 0) 95%);
+  pointer-events: none; /* Allows clicks to pass through */
+}
+
+.MovieDetailsPage .MovieDetails .MovieDetailsInfo h1 {
+  font-size: 2.5em;
+  margin: 0 0 10px 0;
+  text-shadow: 0 0 25px rgb(255, 255, 255);
+}
+
+.MovieDetailsPage .MovieDetails .MovieDetailsInfo p {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+/* From Uiverse.io by mrhyddenn */
+
+
+@media (max-width: 768px) {
+  .MovieDetailsPage .MovieDetails .MovieDetailsInfo {
+    max-width: 90%; /* Takes up more width on smaller screens */
+    bottom: 10px; /* Adjust the bottom spacing for smaller screens */
+    left: 10px; /* Adjust the left spacing for smaller screens */
+    padding: 15px; /* Adjust padding */
+  }
+
+  .MovieDetailsPage .MovieDetails .MovieDetailsInfo h1 {
+    font-size: 1.8em; /* Smaller title font size for mobile */
+  }
+
+  .MovieDetailsPage .MovieDetails .MovieDetailsInfo p {
+    font-size: 1em; /* Smaller text for mobile */
+  }
+}

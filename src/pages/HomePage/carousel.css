@@ -1,0 +1,56 @@
+.carousel-card {
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px #2f566b;
+    transition: transform 0.3s ease;
+    max-width: 100%;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .carousel-card-bg {
+    position: absolute; /* Position it behind the main image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire card */
+    filter: blur(10px); /* Apply blur effect */
+    z-index: 1; /* Set a lower z-index to stay behind the main image */
+  }
+  
+  .carousel-card-img {
+    height: 300px;
+    width: 100%;
+    object-fit: contain;
+    position: relative; /* Position relative for stacking */
+    z-index: 2; /* Set a higher z-index to stay on top */
+  }
+  
+  .carousel-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    z-index: 3; /* Ensure overlay is above the images */
+  }
+  
+  .carousel-card-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    z-index: 4; /* Keep info above everything */
+  }
+  
+  .carousel-card-title {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+
+  

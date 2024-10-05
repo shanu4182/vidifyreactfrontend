@@ -1,0 +1,54 @@
+.series-details {
+    padding: 20px;
+  }
+  
+  .season-container {
+    margin-bottom: 30px;
+  }
+  
+  .season-container h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: var(--textColor);
+  }
+  
+  .episodes-grid {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto; /* Allows horizontal scrolling for episodes */
+    padding: 10px 0;
+  }
+  
+  .episode-card {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .episode-thumbnail {
+    width: 100%;
+    height: auto;
+  }
+  
+  .episode-info {
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(176, 143, 143);
+  }
+  
+  .episode-info h3 {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .episode-info p {
+    font-size: 14px;
+    color: #555;
+  }
+  

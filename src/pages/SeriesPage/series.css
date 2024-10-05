@@ -1,0 +1,79 @@
+/* Series Cards Container */
+.SeriesCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 50px;
+    place-items: center;
+    padding-bottom: 60px;
+    
+  }
+  
+  /* Single Series Card */
+  .seriesCard {
+    position: relative;
+    aspect-ratio: 4 / 6; /* Maintain the aspect ratio of the card */
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+    will-change: transform;
+  }
+  
+  .seriesCard:hover {
+    transform: translateY(-5px); /* Slight hover effect */
+  }
+  
+  /* Series Info Section */
+  .seriesInfo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    backdrop-filter: blur(5px) saturate(0%);
+    -webkit-backdrop-filter: blur(5px) saturate(0%);
+    background-color: rgba(17, 25, 40, 0.6);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+  }
+  
+  .seriesTitle {
+    font-size: 0.8em;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .seriesDuration {
+    font-size: 0.8em;
+  }
+  
+  /* Views Section */
+  .upperSection {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    backdrop-filter: blur(5px) saturate(0%);
+    -webkit-backdrop-filter: blur(5px) saturate(0%);
+    background-color: rgba(17, 25, 40, 0.6);
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+
+  @media (max-width: 600px) {
+
+    .SeriesCards {
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      
+    }
+  }
+  

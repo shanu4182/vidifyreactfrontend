@@ -1,0 +1,50 @@
+.profileAndName{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    
+}
+.profileAndName .profileAndNameButton{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.profileAndName .profileAndNameButton .profilePic{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+.profileAndName .profileAndNameButton .nameAndFollowers{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    font-size: 11px;
+    margin: 0px 5px 0px 5px;
+}
+.FollowButton{
+   all: unset;
+   border: 2px solid white;
+   border-radius: 5px;
+   padding: 5px 10px ;
+   font-size: small;
+   background: #ffffff;
+   color: rgb(0, 0, 0);
+}
+.VideoActionComponents{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.VideoActionComponents .videoActionIconAndValue {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.VideoActionComponents .videoActionIconAndValue > span{
+    font-size: 12px;
+    padding: 3px;
+}

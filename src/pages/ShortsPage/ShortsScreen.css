@@ -1,0 +1,60 @@
+.short-screen-container {
+  height: calc(100vh - 100px); /* Full height of the viewport */
+  overflow-y: scroll; /* Enable scrolling */
+  scroll-snap-type: y mandatory; /* Enable snap scrolling */
+}
+
+.short-screen-container .video-container {
+  position: relative; /* Position relative to allow overlay positioning */
+  height: calc(100vh - 100px); /* Each video takes full viewport height */
+  scroll-snap-align: start; /* Snap at the start of each container */
+  scroll-snap-stop: always; /* Always stop at the snap point */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.short-screen-container .video-container video {
+  height: 90%;
+  width: 316px;
+}
+
+.short-screen-container .video-container .video-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.short-screen-container
+  .video-container
+  .video-overlay
+  .video-overlay-container {
+  height: 90%;
+  width: 316px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.short-screen-container .video-container .video-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+
+  .short-screen-container .video-container video {
+    height: 96%;
+    width:96%;
+  }
+  .short-screen-container
+  .video-container
+  .video-overlay
+  .video-overlay-container {
+  height: 90%;
+  width: 90%;
+}
+  
+}
